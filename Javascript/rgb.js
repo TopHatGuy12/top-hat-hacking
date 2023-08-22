@@ -17,7 +17,7 @@ function submitColor() {
             tries = tries - 1;
             alert("You have " + tries + " tries left.");
         } else {
-            alert("You have fun out of tries. Your final guess was " + colorChoice + " and the correct answer was " + colorRandom + ".");
+            alert("You have run out of tries. Your final guess was " + colorChoice + " and the correct answer was " + colorRandom + ".");
             refresh();
         }
     }, 50);
