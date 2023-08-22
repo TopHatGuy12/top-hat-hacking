@@ -15,7 +15,12 @@ function submitColor() {
     setTimeout(function() {
         if(tries > 1) {
             tries = tries - 1;
-            alert("You have " + tries + " tries left.");
+            if(tries == 1) {
+                alert("You only have " + tries + " try left!");
+            } else {
+                alert("You have " + tries + " tries left.");
+            }
+            
         } else {
             alert("You have run out of tries. Your final guess was " + colorChoice + " and the correct answer was " + colorRandom + ".");
             refresh();
