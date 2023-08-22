@@ -15,7 +15,7 @@ function submitColor() {
     setTimeout(function() {
         if(tries > 1) {
             tries = tries - 1;
-            if (tries == 1) {
+            if (tries == 2) {
                 alert("You only have " + tries + " try left!");
             } else {
                 alert("You have " + tries + " tries left.");
