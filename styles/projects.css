@@ -1,0 +1,28 @@
+.project {
+    height: auto;
+    padding: 20px;
+    border-top:black;
+    border-color: black;
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.project a {
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: 'Space Mono', monospace;
+
+}
+
+.projectHalf {
+    width:50%;
+}
+
+.projectDesc {
+    text-align: left;
+    font-family: 'Space Mono', monospace;
+    width: 80%;
+}

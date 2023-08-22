@@ -1,0 +1,39 @@
+button {
+    background-color: gray;
+    border-radius: 20px;
+    border-color: black;
+    width: 80px;
+    border-style: double;
+    margin-left: 3px;
+    margin-right: 3px;
+}   
+
+.colorAnswer p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.guessedColor {
+    width:50%;
+    border-top: 1px solid black;
+}
+
+.randomColor {
+    width:50%;
+    border-top: 1px solid black;
+}
+
+.colors {
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+}
+
+.colorMenu {
+    height: 20%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}

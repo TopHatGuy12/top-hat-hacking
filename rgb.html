@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RGB/Hex Guesser</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" href="styles/nav.css">
+        <link rel="stylesheet" type="text/css" href="styles/rgb.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <div class="navSections w3-cell-row">
+                    <div class="leftNav w3-container w3-cell">
+                        <div>
+                            <h1 class="logo"><a href="index.html" style="text-decoration: none;">TopHatHacking</a></h1>
+                        </div>
+                    </div>
+                    <div class="centerNav w3-container w3-cell">
+                        <a href="index.html" class="navLink Matrix" data-value="HOME">HOME</a>
+                        <a href="projects.html" class="navLink Matrix" data-value="PROJECTS">PROJECTS</a>
+                    </div>
+                    <div class="rightNav w3-container w3-cell">
+                    </div>
+                </div>
+            </div>
+            <div class='main'>
+    
+                <div class="colorMenu">
+
+                    <div class="colorAnswer">
+                        <p>Guess the Color:</p>
+                        <p><input type="text" class="colorInput"></p>  
+                        <p><button class="refreshButton" onclick="refresh()">Refresh</button><button class="submitButton" onclick="submitColor()">Submit</button></p>
+                    </div>
+
+                </div>
+                <div class="colors">
+
+                    <div class="randomColor">
+
+                    </div>
+                    <div class="guessedColor">
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="footer">
+                <div class="copyright"></div>
+                    <p class="copyp">Copyright &copy; 2023 Asher Carrier</p>
+                </div>
+            </div>
+        </div>
+        <script src="Javascript/konami.js"></script>
+        <script src="Javascript/matrix.js"></script>
+        <script src="Javascript/rgb.js"></script>
+    </body>
+</html>

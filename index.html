@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TopHatHacking</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" href="styles/nav.css">
+        <style>
+            .hidden {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                margin: 10px;
+                padding: 10px;
+                background-color: white;
+                z-index: 100000000000000;
+                opacity: 0;
+                transition: 400ms;
+            }
+
+            .hidden:hover {
+                opacity: 100;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <div class="navSections w3-cell-row">
+                    <div class="leftNav w3-container w3-cell">
+                        <div>
+                            <h1 class="logo"><a href="index.html" style="text-decoration: none;">TopHatHacking</a></h1>
+                        </div>
+                    </div>
+                    <div class="centerNav w3-container w3-cell">
+                        <a href="index.html" class="navLink Matrix" data-value="HOME">HOME</a>
+                        <a href="projects.html" class="navLink Matrix" data-value="PROJECTS">PROJECTS</a>
+                    </div>
+                    <div class="rightNav w3-container w3-cell">
+                    </div>
+                </div>
+            </div>
+            <div class="main"> 
+                <!--<h1>Welcome to TopHatHacking</h1>-->
+                <div class="mainheadholder">
+                    <h3 class="mainhead opentype">White hats? Black hats? Nah. Top hats.</h3>
+                </div>
+                <div class="blockingDiv"></div>
+                <p style="font-size: medium; margin-top:70px">Welcome to TopHatHacking,<br>I'm Asher Carrier and this is a conglomeration of random stuff I make.</p>
+
+            </div>
+
+            <div class="footer">
+                <div class="copyright"></div>
+                    <p class="copyp">Copyright &copy; 2023 Asher Carrier</p>
+                </div>
+            </div>
+        </div>
+        <h6 class="hidden"><i>Asher smells lol</i></h6>
+            <script src="Javascript/matrix.js"></script>
+            <script src="Javascript/opentype.js"></script>
+            <script src="Javascript/konami.js"></script>
+        </body> 
+</html> 
