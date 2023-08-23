@@ -17,7 +17,7 @@ function submitColor() {
     
     setTimeout(function() {
         if ((w3color(colorChoice).red == w3color(colorRandom).red) && (w3color(colorChoice).green == w3color(colorRandom).green) && (w3color(colorChoice).blue == w3color(colorRandom).blue)) {
-            alert(`Congratulations! You have correctly guessed the color in ${4-tries} try(s). The color was ${colorRandom}.`)
+            alert(`Congratulations! You have correctly guessed the color in ${4-tries} ${(function(){if(4-tries == 1){return 'try'}else{return 'tries'})()}. The color was ${colorRandom}.`)
             refresh()
         } else if(tries > 1) {
             tries = tries - 1;
