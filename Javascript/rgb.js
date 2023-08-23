@@ -29,6 +29,7 @@ function submitColor() {
             
         } else {
             alert("You have run out of tries. Your final guess was " + colorChoice + " and the correct answer was " + colorRandom + ". Your score is " + Math.abs(w3color(colorRandom).red - w3color(colorChoice).red) + Math.abs((w3color(colorRandom).green - w3color(colorChoice).green)) + Math.abs((w3color(colorRandom).blue - w3color(colorChoice).blue)) + ".");
+            alert(colorRandom + "   " + colorChoice)
             refresh();
         }
     }, 50);
