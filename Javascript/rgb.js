@@ -2,6 +2,9 @@ var tries = 3;
 
 window.onload = function() {
     refresh();
+    var importElem = document.createElement('script');
+    importElem.src="https://www.w3schools.com/lib/w3color.js";
+    document.body.appendChild(importElem);
 };
 
 function submitColor() {
@@ -13,7 +16,10 @@ function submitColor() {
     var colorRandom = colorRandomSquare[0].style.backgroundColor;
 
     setTimeout(function() {
-        if(tries > 1) {
+        if (w3color(colorChoice) == w3color(colorRandom)) {
+            alert("congratulations! You have correctly guessed the color. The color was ${colorRandom}")
+            refresh()
+        } else if(tries > 1) {
             tries = tries - 1;
             if (tries == 1) {
                 alert("You only have " + tries + " try left!");
@@ -41,6 +47,8 @@ function randomRgbColor() {
 }
 
 function refresh() {
+    var colorChoiceInput = document.getElementsByClassName("colorInput");
+    colorChoiceInput[0].value = "";
     var colorRandomSquare = document.getElementsByClassName("randomColor");
     colorRandomSquare[0].style.backgroundColor = randomRgbColor();
     tries = 3;
