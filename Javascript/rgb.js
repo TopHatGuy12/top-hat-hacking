@@ -14,9 +14,6 @@ function submitColor() {
     colorChoiceSquare[0].style.backgroundColor = colorChoice;
     var colorRandomSquare = document.getElementsByClassName("randomColor");
     var colorRandom = colorRandomSquare[0].style.backgroundColor;
-
-    console.log(w3color(colorChoice))
-    console.log(w3color(colorRandom))
     
     setTimeout(function() {
         if ((w3color(colorChoice).red == w3color(colorRandom).red) && (w3color(colorChoice).green == w3color(colorRandom).green) && (w3color(colorChoice).blue == w3color(colorRandom).blue)) {
@@ -54,5 +51,7 @@ function refresh() {
     colorChoiceInput[0].value = "";
     var colorRandomSquare = document.getElementsByClassName("randomColor");
     colorRandomSquare[0].style.backgroundColor = randomRgbColor();
+    var colorChoiceSquare = document.getElementsByClassName("guessedColor");
+    colorChoiceSquare[0].style.backgroundColor = 'white';
     tries = 3;
 }
