@@ -17,7 +17,7 @@ function submitColor() {
     
     setTimeout(function() {
         if ((w3color(colorChoice).red == w3color(colorRandom).red) && (w3color(colorChoice).green == w3color(colorRandom).green) && (w3color(colorChoice).blue == w3color(colorRandom).blue)) {
-            alert(`Congratulations! You have correctly guessed the color in ${4-tries} ${(function(){if(4-tries == 1){return 'try'}else{return 'tries'}})()}. The color was ${colorRandom}.`)
+            alert(`Congratulations! You have correctly guessed the color in ${4-tries} ${(function(){if(4-tries == 1){return 'try'}else{return 'tries'}})()}. The color was ${colorRandom}. Fun fact about that color, it is on the visible electromagnetic spectrum.`)
             refresh()
         } else if(tries > 1) {
             tries = tries - 1;
