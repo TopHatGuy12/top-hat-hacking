@@ -15,6 +15,9 @@ function submitColor() {
     var colorRandomSquare = document.getElementsByClassName("randomColor");
     var colorRandom = colorRandomSquare[0].style.backgroundColor;
 
+    console.log(w3color(colorChoice))
+    console.log(w3color(colorRandom))
+    
     setTimeout(function() {
         if (w3color(colorChoice) == w3color(colorRandom)) {
             alert("congratulations! You have correctly guessed the color. The color was ${colorRandom}")
