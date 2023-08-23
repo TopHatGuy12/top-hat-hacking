@@ -1,4 +1,4 @@
-# top-hat-hacking
+# TopHatHacking
 
 Source code for my website [TopHatHacking](https://tophathacking.dev/)
 
