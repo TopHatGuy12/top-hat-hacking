@@ -1,7 +1,7 @@
 //Script for various secrets that appear when the coorect thing is typed.
 var keys = [];
 var secretCode = ['asher', 'hippopotomonstrosesquippedaliophobia', 'projects', "ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightbaEnter"];
-var futureProjects = ["Team Maker", " randoMTGame", " Word of the Day", " finishing the website"]
+var futureProjects = ["Team Maker", " randoMTGame", " Word of the Day", "adding score to RGB guesser", "making the website responsive", " finishing the website"]
 
 function codeMet(whichCode) {
     if(whichCode == 'asher') {
