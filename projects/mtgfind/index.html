@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>RGB/Hex Guesser</title>
+        <title>MTGFind</title>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
         <link rel="stylesheet" type="text/css" href="styles/main.css">
         <link rel="stylesheet" type="text/css" href="styles/nav.css">
-        <link rel="stylesheet" type="text/css" href="styles/rgb.css">
-
     </head>
     <body>
         <div class="container">
@@ -18,8 +16,8 @@
                         </div>
                     </div>
                     <div class="centerNav w3-container w3-cell">
-                        <a href="index.html" class="navLink Matrix" data-value="HOME">HOME</a>
-                        <a href="projects.html" class="navLink Matrix" data-value="PROJECTS">PROJECTS</a>
+                        <a href="/" class="navLink Matrix" data-value="HOME">HOME</a>
+                        <a href="/projects" class="navLink Matrix" data-value="PROJECTS">PROJECTS</a>
                         <a href="https://github.com/TopHatGuy12/top-hat-hacking" class="navLink Matrix" target="_blank" data-value="GITHUB">GITHUB</a>
                     </div>
                     <div class="rightNav w3-container w3-cell">
@@ -27,27 +25,9 @@
                 </div>
             </div>
             <div class='main'>
-    
-                <div class="colorMenu">
-
-                    <div class="colorAnswer">
-                        <p>Guess the Color:</p>
-                        <p><input type="text" class="colorInput"></p>  
-                        <p><button class="refreshButton" onclick="refresh()">Refresh</button><button class="submitButton" onclick="submitColor()">Submit</button></p>
-                    </div>
-
-                </div>
-                <div class="colors">
-
-                    <div class="randomColor">
-
-                    </div>
-                    <div class="guessedColor">
-
-                    </div>
-
-                </div>
-
+                <h1 class="projectHead">MTGFind</h1>
+                <p style="font-size: medium;">Text 573-MTG-FIND (573-684-3463) or add it to a group chat to use MTGFind.</p>
+                <p>MTGFind takes the users prompt in the format [cardname]. It returns the first card alphabetically that fits that name. MTGFind searches scryfall, so anyone who knows how to use the <a href="https://scryfall.com/docs/syntax">Scryfall syntax</a> can search for cards using that. For example, [o:"kraken" o:"whenever you draw a card" t:"enchantment"] will find Ominous Seas.</p>
             </div>
             <div class="footer">
                 <div class="copyright"></div>
@@ -57,6 +37,5 @@
         </div>
         <script src="Javascript/konami.js"></script>
         <script src="Javascript/matrix.js"></script>
-        <script src="Javascript/rgb.js"></script>
     </body>
-</html>
+</html>      
