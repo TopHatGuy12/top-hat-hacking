@@ -17,7 +17,7 @@ function submitColor() {
     
     setTimeout(function() {
         if ((w3color(colorChoice).red == w3color(colorRandom).red) && (w3color(colorChoice).green == w3color(colorRandom).green) && (w3color(colorChoice).blue == w3color(colorRandom).blue)) {
-            alert(`Congratulations! You have correctly guessed the color in ${4-tries}. The color was ${colorRandom}.`)
+            alert(`Congratulations! You have correctly guessed the color in ${4-tries} try(s). The color was ${colorRandom}.`)
             refresh()
         } else if(tries > 1) {
             tries = tries - 1;
@@ -28,7 +28,7 @@ function submitColor() {
             }
             
         } else {
-            alert("You have run out of tries. Your final guess was " + colorChoice + " and the correct answer was " + colorRandom + ".");
+            alert("You have run out of tries. Your final guess was " + colorChoice + " and the correct answer was " + colorRandom + ". Your score is " + Math.abs(w3color(colorChoice).red - w3color(colorRandom).red) + Math.abs((w3color(colorChoice).green - w3color(colorRandom).green)) + Math.abs((w3color(colorChoice).blue - w3color(colorRandom).blue)));
             refresh();
         }
     }, 50);
