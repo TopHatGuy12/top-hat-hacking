@@ -1,3 +1,4 @@
+//Copyright Riley Campbell 2023 BSD 3 Clause
 setInterval(()=> {
   var bookmarkletElements = Array.from(document.querySelectorAll('bookmarklet'))
   
