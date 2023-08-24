@@ -1,4 +1,11 @@
 //Copyright Riley Campbell 2023 BSD 3 Clause
+
+function urlEncodeString(str) {
+    return encodeURIComponent(str).replace(/[!'()*]/g, function (c) {
+        return '%' + c.charCodeAt(0).toString(16);
+    });
+}
+
 setInterval(()=> {
   var bookmarkletElements = Array.from(document.querySelectorAll('bookmarklet'))
   
