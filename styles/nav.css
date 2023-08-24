@@ -58,6 +58,12 @@
     z-index: 9999;
 }
 
+.logoIMG {
+    display: block;
+    height: 40px;
+    float: left;
+}
+
 .footer {
     background-color: black;
     height: 70px;
