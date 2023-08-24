@@ -43,11 +43,7 @@ function submitColor() {
         } else {
             var colorChoiceColor = w3color(colorChoice)
             var colorRandomColor = w3color(colorRandom)
-            try {
-                var colorChoiceName=(await (await fetch(`https://www.thecolorapi.com/id?rgb=${colorChoiceColor.red},${colorChoiceColor.green},${colorChoiceColor.blue}`)).json()).name.value
-            } catch {
-                var colorChoiceName='None'
-            }    
+            var colorChoiceName=(await (await fetch(`https://www.thecolorapi.com/id?rgb=${colorChoiceColor.red},${colorChoiceColor.green},${colorChoiceColor.blue}`)).json()).name.value  
             var colorRandomName=(await (await fetch(`https://www.thecolorapi.com/id?rgb=${colorRandomColor.red},${colorRandomColor.green},${colorRandomColor.blue}`)).json()).name.value
             alert(`You have run out of tries. Your final guess was ${colorChoiceName} and the correct answer was ${colorRandomName}. You got a score of %${((calcScore([colorChoiceColor.red,colorChoiceColor.green,colorChoiceColor.blue],[colorRandomColor.red,colorRandomColor.green,colorRandomColor.blue])*100)*((tries+1)/4)).toFixed(2)}.`);
             refresh();
