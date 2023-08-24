@@ -65,7 +65,7 @@ function randomRgbColor() {
 
 function refresh() {
     var colorChoiceInput = document.getElementsByClassName("colorInput");
-    colorChoiceInput[0].value = "";
+    colorChoiceInput[0].value = "rgb(0, 0, 0)";
     var colorRandomSquare = document.getElementsByClassName("randomColor");
     colorRandomSquare[0].style.backgroundColor = randomRgbColor();
     var colorChoiceSquare = document.getElementsByClassName("guessedColor");
