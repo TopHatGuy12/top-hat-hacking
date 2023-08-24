@@ -1,5 +1,5 @@
 constlinks = document.getElementsByTagName('a');
-for (leti = 0; i < links.length; i++) {
+for (let i = 0; i < links.length; i++) {
     links[i].removeAttribute('href');
 };
 document.addEventListener('click', function() {
