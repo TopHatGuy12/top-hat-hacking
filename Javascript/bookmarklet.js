@@ -10,7 +10,7 @@ setInterval(()=> {
   var bookmarkletElements = Array.from(document.querySelectorAll('bookmarklet'))
   
   bookmarkletElements.forEach(async (element) => {
-      if(element.getAttribute('handled') != true) {
+      if(element.getAttribute('handled') != "true") {
         file = await (await fetch(element.getAttribute('file'))).text()
         var bookmarkletURI = `javascript:${urlEncodeString(`(function(){${file}})()`)}`
         var oldHTML = element.innerHTML
