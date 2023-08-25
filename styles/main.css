@@ -48,6 +48,7 @@ h3 {
     background-color: white;
     transition: 500ms;
     z-index: 9988;
+    pointer-events: none;
 }
 
 .opentype {
