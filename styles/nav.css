@@ -55,6 +55,7 @@
     font-family: 'Space Mono', monospace;
     color: antiquewhite;
     font-size: 27px;
+    line-height: 59.08px; 
     z-index: 9999;
     margin-top:auto;
     margin-bottom:auto;
