@@ -56,6 +56,8 @@
     color: antiquewhite;
     font-size: 27px;
     z-index: 9999;
+    margin-top:auto;
+    margin-bottom:auto;
 }
 
 .logoIMG {
