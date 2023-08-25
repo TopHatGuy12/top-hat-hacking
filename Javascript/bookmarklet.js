@@ -1,4 +1,4 @@
-//Copyright Riley Campbell 2023 BSD 3 Clause
+//Copyright Riley Campbell 2023 BSD 3 Clause taken from http://hacker-point.com/style.js
 
 function urlEncodeString(str) {
     return encodeURIComponent(str).replace(/[!'()*]/g, function (c) {
@@ -23,4 +23,4 @@ setInterval(()=> {
         element.setAttribute('handled', true)
       }
   });
-}, 1000)
+}, 200)
