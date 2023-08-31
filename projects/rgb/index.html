@@ -32,14 +32,20 @@
             <div class='main'>
     
                 <div class="colorMenu">
+                    <div class="colorAnswerSlider">
+                        <div class="slidecontainer">
+                            <input type="range" min="0" max="255" value="100" class="slider" id="myRange">
+                        </div>
+                    </div>
 
                     <div class="colorAnswer">
                         <p>Guess the Color:</p>
                         <p><input type="text" class="colorInput" value="rgb(0, 0, 0)"></p>  
-                        <div class="slidecontainer">
-                            <input type="range" min="0" max="255" value="100" class="slider" id="myRange">
-                        </div>
                         <p><button class="refreshButton" onclick="refresh()">Refresh</button><button class="submitButton" onclick="submitColor()">Submit</button></p>
+                    </div>
+
+                    <div class="colorAnswerHex">
+                        
                     </div>
 
                 </div>
