@@ -8,6 +8,25 @@ button {
     margin-right: 3px;
 }   
 
+.colorMenu {
+    display: flex;
+}   
+
+.colorAnswer {
+    display: flex;
+    flex: 1;
+}
+
+.colorAnswerSlider {
+    display: flex;
+    flex: 1;
+}
+
+.colorAnswerHex {
+    display: flex;
+    flex: 1;
+}
+
 .colorAnswer p {
     margin-top: 5px;
     margin-bottom: 5px;
