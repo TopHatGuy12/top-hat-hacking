@@ -51,11 +51,19 @@
                         <a href="https://github.com/TopHatGuy12/top-hat-hacking" class="navLink Matrix" target="_blank" data-value="GITHUB">GITHUB</a>
                     </div>
                     <div class="rightNav w3-container w3-cell">
-                        <button class="hamburgerButton">
-                            <svg style="position: relative; top:50%; transform: translateY(-50%)" xmlns="http://www.w3.org/2000/svg" width="45px" fill="white" class="bi bi-list" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                            </svg>
+                        <button class="hamburgerButton" onclick="if (this.classList.contains('active')) {this.classList.remove('active'); document.getElementsByClassName('hamburgerMenu')[0].classList.remove('active'); this.innerHTML=`<svg style='position: relative; top:50%; transform: translateY(-50%)' xmlns='http:\/\/www.w3.org/2000/svg' width='45px' fill='white' class='bi bi-list' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z'/></svg>`;} else {this.classList.add('active'); document.getElementsByClassName('hamburgerMenu')[0].classList.add('active'); this.innerHTML=`<svg style='position: relative; top:50%; transform: translateY(-50%)' xmlns='http:\/\/www.w3.org/2000/svg' width='45px' fill='white' class='bi bi-x-lg' viewBox='0 0 16 16'><path d='M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z'></svg>`}">
+                            <svg style="position: relative; top:50%; transform: translateY(-50%)" xmlns="http://www.w3.org/2000/svg" width="45px" fill="white" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>
                         </button>
+                    </div>
+                    <div class="hamburgerMenu">
+                        <br>
+                        <br>
+                        <br>
+                        <ul>
+                            <li><a href="/" class="navLink Matrix" data-value="HOME">HOME</a></li>
+                            <li><a href="/projects" class="navLink Matrix" data-value="PROJECTS">PROJECTS</a></li>
+                            <li><a href="https://github.com/TopHatGuy12/top-hat-hacking" class="navLink Matrix" target="_blank" data-value="GITHUB">GITHUB</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>

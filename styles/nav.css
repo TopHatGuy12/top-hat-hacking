@@ -20,7 +20,7 @@
     color:antiquewhite;
     text-decoration: none;
     font-size: 25px;
-    z-index: 9999;
+    z-index: 9999999999999999999;
 }
 
 .navLink:hover {
@@ -40,7 +40,7 @@
     text-align: center;
     display: flex;
     flex: 1;
-    z-index: 9999;
+    z-index: 999999;
 }
 
 .rightNav {
@@ -48,23 +48,26 @@
     display: flex;
     justify-content: right;
     flex: 1;
-    z-index: 9999;
+    z-index: 999999;
 
 }
 
 .logo {
+    position: relative;
     font-family: 'Space Mono', monospace;
     color: antiquewhite;
     font-size: 27px;
     line-height: 50px; 
     height: 50px;
-    z-index: 9999;
+    z-index: 9999999;
     margin-top:auto;
     margin-bottom:auto;
     vertical-align: middle;
 }
 
 .logoIMG {
+    position: relative;
+    z-index: 999999;
     display: block;
     height: 50px;
     float: left;
@@ -85,6 +88,7 @@
 
 .main {
     flex: 50;
+    z-index: 9998;
 }
 
 .hamburgerButton {
@@ -96,6 +100,25 @@
 
 .hamburgerButton:hover {
     background-color: darkgreen; 
+}
+
+.hamburgerMenu {
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    transform: translateY(-100%);
+    color: white;
+    background-color: black;
+    z-index: 9999;
+    transition: 0.4s;
+}
+
+.hamburgerMenu.active {
+    transform: translateY(0%);
+}
+
+.hamburgerMenu ul {
+    list-style-type: none;
 }
 
 @media (max-width: 1024px) {
@@ -113,5 +136,11 @@
 
     .hamburgerButton {
         display: block;
+    }
+}
+
+@media (min-width: 578px) {
+    .hamburgerMenu.active {
+        transform: translateY(-100%);
     }
 }
