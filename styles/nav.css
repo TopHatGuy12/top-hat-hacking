@@ -89,6 +89,7 @@
 .main {
     flex: 50;
     z-index: 9998;
+    padding: 10px;
 }
 
 .hamburgerButton {
