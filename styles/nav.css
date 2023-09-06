@@ -120,7 +120,7 @@
 
 .hamburgerMenu ul {
     list-style-type: none;
-    padding-left: 70px;
+    padding-left: 60px;
 }
 
 @media (max-width: 1024px) {
