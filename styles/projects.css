@@ -22,6 +22,7 @@
 
 .projectHalf {
     width:50%;
+    padding:10px
 }
 
 .projectDesc {
@@ -29,3 +30,17 @@
     font-family: 'Space Mono', monospace;
     width: 80%;
 }
+
+@media (max-width: 1048px) {
+    .project {
+      flex-direction: column;
+    }
+
+    .projectHalf {
+        width: 100%;
+    }
+
+    .projectHalf.image {
+      order: -1; /* Move the image cell to the top */
+    }
+  }
