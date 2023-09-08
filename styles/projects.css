@@ -1,12 +1,15 @@
 .project {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     height: auto;
-    padding: 20px;
+    padding: 0px;
     border-top:black;
     border-color: black;
     display: flex;
     flex-direction: row;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .project a {
@@ -33,7 +36,9 @@
 
 @media (max-width: 1048px) {
     .project {
-      flex-direction: column;
+        flex-direction: column;
+        margin-left: 50px;
+        margin-right: 50px;
     }
 
     .projectHalf {
