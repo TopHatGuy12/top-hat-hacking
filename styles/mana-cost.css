@@ -1,8 +1,5 @@
 /*Thanks micku @ https://github.com/micku/mana-cost/blob/master/css/mana-cost.css*/
 
-.manaSelect {
-    width: 50px;
-}   
 
 .mana {
     background-image: url('../images/mana.svg');
@@ -113,3 +110,9 @@
     -webkit-filter: drop-shadow(-1px 1px 0px #000);
     filter: drop-shadow(-1px 1px 0px #000);
 }
+
+
+.manaSelect {
+    padding-left: 30px;
+    padding-right: 30px;
+}   
