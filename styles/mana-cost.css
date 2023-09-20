@@ -1,5 +1,10 @@
 /*Thanks micku @ https://github.com/micku/mana-cost/blob/master/css/mana-cost.css*/
 
+.manaSelect {
+    padding-left: 10px;
+    padding-right:10px;
+}   
+
 .mana {
     background-image: url('../images/mana.svg');
     background-repeat: no-repeat;
