@@ -1,8 +1,8 @@
 /*Thanks micku @ https://github.com/micku/mana-cost/blob/master/css/mana-cost.css*/
 
 .manaSelect {
-    padding-left: 10px;
-    padding-right:10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }   
 
 .mana {
