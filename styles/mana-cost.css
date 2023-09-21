@@ -16,6 +16,10 @@
     height: 2em;
     width: 2em;
 }
+.mana.medlarge {
+    height: 2.5em;
+    width: 2.5em;
+}
 .mana.large {
     height: 4em;
     width: 4em;
