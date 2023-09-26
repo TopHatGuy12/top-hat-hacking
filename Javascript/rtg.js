@@ -2,7 +2,7 @@ const manaElements = document.getElementsByClassName('mana')
 
 for (let i=0; i < manaElements.length; i++) {
   var element = manaElements[i];
-  element.addEventListener('click', () => {
+  element.addEventListener('click', (event) => {
     
     for (let i=0; i < manaElements.length; i++) {
         var otherElem = manaElements[i];
@@ -10,8 +10,8 @@ for (let i=0; i < manaElements.length; i++) {
       otherElem.classList.add('medium')
     }
     
-    this.classList.remove('medium');
-    this.classList.add('medlarge');
+    event.target.classList.remove('medium');
+    event.target.classList.add('medlarge');
 
   });
 }
