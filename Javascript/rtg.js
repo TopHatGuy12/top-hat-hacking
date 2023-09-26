@@ -10,8 +10,8 @@ for (let i=0; i < manaElements.length; i++) {
       otherElem.classList.add('medium')
     }
     
-    element.classList.remove('medium');
-    element.classList.add('medlarge');
+    this.classList.remove('medium');
+    this.classList.add('medlarge');
 
   });
 }
