@@ -21,7 +21,7 @@ function typewriterAnimation() {
 
         const typewriterInterval = setInterval(function() {
             if (i >= textLength) {
-                element.innerHTML = element.dataset.value.slice(0, i + 1);
+                element.innerHTML = element.dataset.value.slice(0, i + 1) + "<span style=\"opacity:0%;\">|</span>";
                 clearInterval(typewriterInterval);
                 document.getElementsByClassName('blockingDiv')[0].style.opacity='0'
                 const typerthingblink = setInterval(function() {
