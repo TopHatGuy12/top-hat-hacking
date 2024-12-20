@@ -21,20 +21,20 @@ function typewriterAnimation() {
 
         const typewriterInterval = setInterval(function() {
             if (i >= textLength) {
-                element.innerText = element.dataset.value.slice(0, i + 1);
+                element.innerHTML = element.dataset.value.slice(0, i + 1);
                 clearInterval(typewriterInterval);
                 document.getElementsByClassName('blockingDiv')[0].style.opacity='0'
                 const typerthingblink = setInterval(function() {
                     if (j % 2 == 0) {
-                        element.innerText = element.dataset.value.slice(0, i + 1) + "<span>|</span>";
+                        element.innerHTML = element.dataset.value.slice(0, i + 1) + "<span>|</span>";
                         j++;
                     } else {
-                        element.innerText = element.dataset.value.slice(0, i + 1) + "<span style=\"opacity:0%;\">|</span>";
+                        element.innerHTML = element.dataset.value.slice(0, i + 1) + "<span style=\"opacity:0%;\">|</span>";
                         j++;
                     }
                 }, 700);
             } else {
-                element.innerText = element.dataset.value.slice(0, i + 1) + "<span>|</span>";
+                element.innerHTML = element.dataset.value.slice(0, i + 1) + "<span>|</span>";
                 i++;
             }
         }, 100); // Adjust the interval (in milliseconds) to control the typing speed
