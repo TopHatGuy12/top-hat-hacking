@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
         <link rel="stylesheet" type="text/css" href="/styles/main.css">
         <link rel="stylesheet" type="text/css" href="/styles/nav.css">
+        <link rel="stylesheet" type="text/css" href="/styles/cipher.css">
         <link rel="icon" type="image/svg" href="/images/tophat.svg">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
@@ -42,8 +43,19 @@
             </div>
             <div class='main'>
                 <h1 class="projectHead">TopHatCipher</h1>
-                <p style="font-size: medium;">This is a cipher I originally made up back in elementary school and refined over the years.</p>
-                <p>You can encode and decode messages in the cipher here.</p>
+                <form>
+                    <div class="formItem">
+                        <p>What would you like to do?</p>
+                    </div>
+                    <div class="formItem">
+                        <input id="encodeButton" class="modeButton" type="Button" name="encode" value="ENCODE" onclick="encodeMode()">
+                        <input id="decodeButton" class="modeButton" type="Button" name="decode" value="DECODE" onclick="decodeMode()">
+                    </div>
+                    <br>
+                    <div class="formItem">
+                        <textarea id="messageBox" name="message" rows="4" cols="50">Enter your plaintext message here.</textarea>
+                    </div>
+                </form>
             </div>
             <div class="footer">
                 <div class="copyright"></div>
@@ -54,5 +66,6 @@
         <script src="/Javascript/konami.js"></script>
         <script src="/Javascript/matrix.js"></script>
         <script src="/Javascript/copyrightUpdater.js"></script>
+        <script src="/Javascript/modeSelect.js"></script>
     </body>
 </html>      
