@@ -137,6 +137,6 @@ function caeserCipher(character) {
             var num = i;
         }
     } 
-    var cipherNum = num+caeser
+    var cipherNum = ((num+caeser)%26)
     return alphabet[cipherNum]
 }
